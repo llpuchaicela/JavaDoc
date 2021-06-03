@@ -14,6 +14,11 @@ public class Ahorro extends Cuenta{
     }
 
     @Override
+    
+    /*
+    * Creamos los metodos getters de los atributos Numero e InteresAnual
+    */
+    
     public String getNumero() {
         return "CTA-AH-".concat(super.getNumero());
     }

@@ -10,6 +10,7 @@ package Banco;
 
 /**
 * Se crea la clase con el nombre Ahorro
+* que es hija de la clase padre Cuenta
 */
 
 public class Ahorro extends Cuenta{

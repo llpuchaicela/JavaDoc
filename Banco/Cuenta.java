@@ -54,10 +54,10 @@ public class Cuenta {
     * Metodo para validar que no admita saldos negativos
     * @param  saldo que define la cantidad de dinero que tiene el la cuenta
     * @exception throw que lanza un mensaje "saldo negativo"
-    * @throw Excepcion  que nos indica que el saldo es negativo o no se cumple la condición.
+    * @throw "Excepcion"  que nos indica que el saldo es negativo o no se cumple la condición.
     */
     
-    public final void setSaldo(double saldo) {
+    public  void setSaldo(double saldo) {
         if(!validarSaldoNoNegativo(saldo)){
             this.saldo = saldo;
         }else{

@@ -29,7 +29,7 @@ public class Cuenta {
         setSaldo(saldo);
         this.numero = numero;
         fechaApertura= LocalDate.now();
-    }
+    }//cierro constructos
     
     /*
     * Creamos los metodos getters de los atributos saldo y nombre
@@ -43,14 +43,16 @@ public class Cuenta {
         return numero;
     }
     /*
-    * Creamos los metodos setters de los atributos saldo y nombre
+    * Creamos metodo setter del atributo número
+    * @param numero, numero de cuenta de la clase Cuenta
     */
     
     public void setNumero(String numero) {
         this.numero = numero;
-    }
+    }//cierro metodo
 
     /*
+    * Se crea el metodo set del atributo saldo
     * Metodo para validar que no admita saldos negativos
     * @param  saldo que define la cantidad de dinero que tiene el la cuenta
     * @exception throw que lanza un mensaje "saldo negativo"
@@ -64,7 +66,7 @@ public class Cuenta {
             throw new IllegalArgumentException("Saldo negativo");
         }
 
-    }
+    }//Cierro metodo
     
     /**
     * Metodo privado para validar saldo negativo
@@ -74,7 +76,7 @@ public class Cuenta {
     
     private boolean validarSaldoNoNegativo(double saldo){
         return saldo < 0;
-    }
+    }// Cierro metodo
 
     /**
     * Metodo publico depositar 
@@ -89,6 +91,6 @@ public class Cuenta {
         }else{ 
             throw new IllegalArgumentException("Monto negativo o igual a 0");
         }
-    }
+    }// Cierro metodo
 
 }

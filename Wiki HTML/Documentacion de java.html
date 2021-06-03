@@ -1,0 +1,79 @@
+<h1 id="-_-qu-es-la-documentaci-n-en-java-_-"><strong><em>¿Qué es la documentación en Java?</em></strong></h1>
+<blockquote>
+<p>La documentación en un proyecto es una parte fundamental a futuro ya que cuando se programa una clase, se debe generar la documentación lo suficientemente detallada haciendo <em><strong>uso del Javadoc</strong></em>, con el fin de que otros programadores sean capaces de usarla sólo con su interfaz. No debe existir necesidad de leer o estudiar su implementación, lo mismo que nosotros para usar una clase del API Java no leemos ni estudiamos su código fuente.</p>
+</blockquote>
+<p>[Documentación en Java] 
+(<a href="https://javadesdecero.es/basico/tipos-comentarios-ejemplos/">https://javadesdecero.es/basico/tipos-comentarios-ejemplos/</a>)</p>
+<h2 id="-_-qu-es-el-javadoc-_-"><strong><em>¿Qué es el Javadoc?</em></strong></h2>
+<blockquote>
+<p>Es una utilidad de Oracle que la mayoría de IDEs utilizan para la generación de comentarios y documentación de APIs en formato HTML a partir de código fuente Java.
+• La herramienta Javadoc extrae esos comentarios especiales y genera páginas HTML para ser vistas desde el navegador. <em>De esta manera facilitamos poder navegar de una clase a otra</em>.</p>
+</blockquote>
+<p><strong>La documentación de Java</strong></p>
+<ul>
+<li>Los diseñadores de Java definieron un método sencillo para generar la documentación de las clases y métodos:</li>
+<li>La documentación se inserta en el mismo fichero que el código (en forma de comentarios)</li>
+</ul>
+<h5 id="-veamos-en-primer-lugar-qu-se-debe-incluir-al-documentar-una-clase-"><em>Veamos en primer lugar qué se debe incluir al documentar una clase:</em></h5>
+<p>a) Nombre de la clase, descripción general, número de versión y nombres de autores.</p>
+<p>b) <strong>Documentación de cada constructor o método</strong> (especialmente los públicos) incluyendo: nombre del constructor o método, tipo de retorno, nombres y tipos de parámetros si los hay, descripción general, descripción de parámetros (si los hay)y descripción del valor que devuelve.</p>
+<h3 id="-qu-hay-que-documentar-">¿Qué hay que documentar?</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th>Hay que añadir explicaciones a todo lo que no es evidente.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td>No hay que repetir lo que se hace, sino explicar por qué se hace.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Y eso se traduce en algunos ejemplos como:</p>
+<ul>
+<li>¿De qué se encarga una clase o un paquete?</li>
+<li>¿Qué hace el método o constructor en caso que se utilice?</li>
+<li>¿Cuál es el uso esperado del método?</li>
+<li>¿Para qué se usa una variable?</li>
+<li>¿Cuál es el uso esperado de una variable?</li>
+<li>¿Qué algoritmo estamos usando, de dónde lo hemos sacado?</li>
+<li>¿Qué limitaciones tiene el algoritmo y la implementación?</li>
+<li>¿Qué se debería mejorar... si hubiera tiempo?</li>
+</ul>
+<h2 id="estos-comentarios-con-etiquetas-de-documentaci-n-pueden-ir-al-inicio-de-">Estos comentarios con etiquetas de documentación pueden ir al inicio de:</h2>
+<ul>
+<li>Una clase.</li>
+<li>Un atributo.</li>
+<li>Un método.</li>
+</ul>
+<h3 id="un-ejemplo-de-etiquetas-en-comentarios-">Un ejemplo de etiquetas en comentarios:</h3>
+<table>
+<thead>
+<tr>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p> /<em>*
+ </em>Esta clase contiene los atributos y métodos de un empleado
+ <em>@author Mario Celis
+ </em>@version 1.0 
+ <em>@see Persona
+ </em>/</p>
+<h3 id="para-la-documentaci-n-en-java">Para la documentación en Java</h3>
+<p><a href="https://github.com/llpuchaicela/JavaDoc/wiki/Comentarios-en-Java#tipos-de-comentarios">Comentarios en java</a></p>
+<p> Recordar que los comentarios javadoc son /<em>* ... </em>/. Se utiliza el carácter @ como anotación especial,</p>
+<ul>
+<li>para describir las etiquetas de documentación.</li>
+<li>Los comentarios se deben colocar justo antes del elemento a documentar.</li>
+<li>Se permite añadir elementos HTML a la documentación para enriquecer su presentación</li>
+</ul>

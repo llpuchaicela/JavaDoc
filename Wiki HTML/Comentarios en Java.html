@@ -1,0 +1,202 @@
+<h1 id="los-comentarios-en-java">Los comentarios en Java</h1>
+<blockquote>
+<p>Son una gran herramienta para documentar nuestro código y hacerlos más entendibles para terceros. El uso principal de los comentarios en cualquier lenguaje de programación es una herramienta que sirve para apoyar la documentación de los programas que desarrollamos y así facilitar su posterior comprensión. </p>
+</blockquote>
+<p>Estas líneas de código, que no se toman en cuenta al momento de ejecutar el programa, por lo tanto no están sujetas a restricciones de sintaxis ni nada similar. </p>
+<blockquote>
+<p>Por ejemplo es muy común usar las líneas de comentarios, para dar una breve explicación de cómo funciona cierta parte de un código, lo cual permite identificar todo con mayor rapidez.</p>
+<h2 id="tipos-de-comentarios">Tipos de comentarios</h2>
+</blockquote>
+<h3 id="comentarios-en-java-de-una-sola-l-nea">Comentarios en Java de una sola línea</h3>
+<p>Comienzan por un doble <code>slash</code> <code>&quot;//&quot;</code>, al colocar el doble <code>slash</code> en cualquier línea de código, todo lo que haya de ahí en adelante en dicha línea será tomado como comentario, ten en cuenta que el doble <code>slash</code> solo convierte en comentario al texto que pertenezca a su misma línea, las líneas de abajo de este, no se verán afectadas</p>
+<h3 id="comentarios-en-java-de-m-ltiples-l-neas">Comentarios en Java de múltiples líneas</h3>
+<p>Estos comentarios van cerrados entre <code>&quot;/*&quot;</code> y <code>&quot;*/&quot;</code>, es decir comienzan donde se ponga <code>&quot;/*&quot;</code> y terminan donde esté el <code>&quot;*/&quot;</code>, siendo esto una manera mucho más sencilla en vez de esta añadiendo doble slash <code>&quot;//&quot;</code> a cada línea. A diferencia de los comentarios de una sola línea, al poner el símbolo <code>&quot;/*&quot;</code> todo el código que haya tanto en la misma línea, como en las línea posteriores de este se convertirán en comentarios hasta que pongamos el <code>&quot;*/&quot;</code> para indicar que hemos cerrado los comentarios</p>
+<h3 id="comentarios-de-documentaci-n-en-java-javadoc-">Comentarios de documentación en Java (Javadoc):</h3>
+<p>Son de especial utilidad al momento de documentar no sólo el código fuente, sino el proyecto como tal. Estos comentarios van cerrados entre <code>&quot;/**&quot;</code> y <code>&quot;*/&quot;</code>, es decir comienzan donde se ponga <code>&quot;/**&quot;</code> y terminan donde esté el <code>&quot;*/&quot;</code>.Cabe resaltar que estos comentarios a diferencia de los comentarios de múltiples líneas, inician con <code>&quot;/**&quot;</code> (doble asterisco) en lugar de <code>&quot;/*&quot;</code> (un solo asterisco). Adicionalmente, se recomienda que cada línea que compone el bloque de comentarios inicie con <code>&quot;*&quot;</code>.</p>
+<p>Estos comentarios además requieren de algunos &quot;componentes&quot; para indicar los componentes del código fuente, tales como parámetros, tipos de retorno, entre otros. Estos &quot;componentes&quot; se normalmente se preceden por un <code>@</code>, por ejemplo para indicar un parámetro de una función de usa <code>@param</code>, o para indicar detalles sobre el retorno se usa <code>@return</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Notación</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>En una línea</td>
+<td>Comienzan con los caracteres <code>//</code> y terminan con la línea</td>
+<td>//Recursividad</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>En múltiples líneas</td>
+<td>Empieza con <code>/*</code> se escriben varias líneas y terminan con los caracteres <code>*/</code></td>
+<td><code>/*</code>Este es un ciclo for <code>*/</code></td>
+</tr>
+<tr>
+<td>Javadoc</td>
+<td>Comienzan con los caracteres <code>/**</code>, y en varias líneas al inicio se agrega <code>*</code> y terminan con los caracteres &quot;*/&quot;</td>
+<td><code>/*</code>Esta línea</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>*no</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>* se</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>ejecuta*/</td>
+</tr>
+</tbody>
+</table>
+<h1 id="etiquetas-de-javadoc">Etiquetas de javadoc</h1>
+<p>La herramienta javadoc reconoce las siguientes etiquetas:</p>
+<table>
+<thead>
+<tr>
+<th>Etiqueta</th>
+<th>Descripcion</th>
+<th>Syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@author</td>
+<td>Agrega el autor de una clase.</td>
+<td>@author name-text</td>
+</tr>
+<tr>
+<td>{@code}</td>
+<td>Muestra texto en fuente de código sin interpretar el texto como marcado HTML o etiquetas javadoc anidadas.</td>
+<td>{@code text}</td>
+</tr>
+<tr>
+<td>{@docRoot}</td>
+<td>Representa la ruta relativa al directorio raíz del documento generado desde cualquier página generada.</td>
+<td>{@docRoot}</td>
+</tr>
+<tr>
+<td>@deprecated</td>
+<td>Agrega un comentario que indica que esta API ya no debe usarse.</td>
+<td>@deprecated deprecatedtext</td>
+</tr>
+<tr>
+<td>@exception</td>
+<td>Agrega un subtítulo Throws a la documentación generada, con el nombre de la clase y el texto de descripción.</td>
+<td>@exception class-name description</td>
+</tr>
+<tr>
+<td>{@inheritDoc}</td>
+<td>Hereda un comentario de la clase heredable o interfaz implementable más cercana .</td>
+<td>Inherits a comment from the immediate surperclass.</td>
+</tr>
+<tr>
+<td>{@link}</td>
+<td>Inserta un enlace en línea con la etiqueta de texto visible que apunta a la documentación del paquete, la clase o el nombre de miembro especificados de una clase referenciada.</td>
+<td>{@link package.class#member label}</td>
+</tr>
+<tr>
+<td>{@linkplain}</td>
+<td>Idéntico a {@link}, excepto que la etiqueta del vínculo se muestra en texto sin formato que en fuente de código.</td>
+<td>{@linkplain package.class#member label}</td>
+</tr>
+<tr>
+<td>@param</td>
+<td>Agrega un parámetro con el nombre de parámetro especificado seguido de la descripción especificada a la sección &quot;Parámetros&quot;.</td>
+<td>@param parameter-name description</td>
+</tr>
+<tr>
+<td>@return</td>
+<td>Agrega una sección &quot;Devoluciones&quot; con el texto de descripción.</td>
+<td>@return description</td>
+</tr>
+<tr>
+<td>@see</td>
+<td>Agrega un encabezado &quot;Ver también&quot; con un enlace o entrada de texto que apunta a una referencia.</td>
+<td>@see reference</td>
+</tr>
+<tr>
+<td>@serial</td>
+<td>Se utiliza en el comentario del documento para un campo serializable predeterminado.</td>
+<td>@serial field-description</td>
+<td>include</td>
+<td>exclude</td>
+</tr>
+<tr>
+<td>@serialData</td>
+<td>Documenta los datos escritos por los métodos writeObject () o writeExternal ().</td>
+<td>@serialData data-description</td>
+</tr>
+<tr>
+<td>@serialField</td>
+<td>Documenta un componente ObjectStreamField.</td>
+<td>@serialField field-name field-type field-description</td>
+</tr>
+<tr>
+<td>@since</td>
+<td>Agrega un encabezado &quot;Desde&quot; con el texto desde especificado a la documentación generada.</td>
+<td>@since release</td>
+</tr>
+<tr>
+<td>@throws</td>
+<td>Las etiquetas @throws y @exception son sinónimos.</td>
+<td>@throws class-name description</td>
+</tr>
+<tr>
+<td>{@value}</td>
+<td>Cuando se usa {@value} en el comentario de documento de un campo estático, muestra el valor de esa constante.</td>
+<td>{@value package.class#field}</td>
+</tr>
+<tr>
+<td>@version</td>
+<td>Agrega un subtítulo &quot;Versión&quot; con el texto de la versión especificado a los documentos generados cuando se usa la opción -version.</td>
+<td>@version version-text</td>
+</tr>
+</tbody>
+</table>
+<h1 id="nota-importante">Nota Importante</h1>
+<blockquote>
+<p>Los comentarios de documentación no deben colocarse en el interior de la definición de un método o constructor, ya que Java asocia los comentarios de documentación con la primera declaración después del comentario</p>
+</blockquote>
+<h2 id="anotaciones-javadoc-https-github-com-llpuchaicela-javadoc-wiki-comentarios-en-java-etiquetas-de-javadoc-">ANOTACIONES     <a href="https://github.com/llpuchaicela/JavaDoc/wiki/Comentarios-en-Java#etiquetas-de-javadoc">Javadoc</a></h2>
+<p><code>Generales</code></p>
+<ul>
+<li>@see referencia. Realiza un enlace. Ejemplos de referencia son: #metodo(); clase#metodo();
+paquete.clase; paquete.clase#metodo(); <a href=”...”></li>
+<li>@since. Indica en la versión que apareció este elemento respecto a la secuencia de versiones
+aparecidas a lo largo del tiempo</li>
+</ul>
+<p><code>Paquetes</code></p>
+<ul>
+<li>@see, @since</li>
+<li>@deprecated. Indica que este elemento es antiguo y que no se recomienda su uso porque
+posiblemente desaparecerá en versiones posteriores. Se debe indicar la alternativa correcta</li>
+</ul>
+<p><code>Clases e interfaces</code></p>
+<ul>
+<li>@see, @since, @deprecated</li>
+<li>@version. Versión y fecha</li>
+<li>@author. Nombre del autor</li>
+</ul>
+<p><code>Variables y constantes</code> </p>
+<ul>
+<li>@see, @deprecated</li>
+</ul>
+<p><code>Métodos</code></p>
+<ul>
+<li>@see, @since, @deprecated</li>
+<li>@param. Definición de un parámetro, es obligatorio. *@param parámetro descripción</li>
+<li>@return. documenta el dato devuelto, es obligatorio. *@return descripción</li>
+<li>@throws. Excepción lanzada por el método. *@throws clase descripción</li>
+</ul>

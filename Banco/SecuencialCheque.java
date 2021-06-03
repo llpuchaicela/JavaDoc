@@ -18,30 +18,36 @@ public class SecuencialCheque {
     private String fin;
     
 /*
-* Creamos los metodos getter  del atributo Inicio
+* Creamos los metodos getter  del atributo Inicio y Fin
 */    
 
 
     public String getFin() {
         return fin;
-    }    
+    }    //Cierro metodo
   
     public String getInicio() {
         return inicio;
-    }
+    } //Cierro metodo
 
     
 
 /*
-* Creamos los metodos setter del atributo Fin
+* Creamos metodo setter del atributo Inicio
+* @param Inicio , atributo de clase SecuencialCheque
 */
     
     public void setInicio(String inicio) {
         this.inicio = inicio;
-    }
+    } //Cierro metodo
     
+
+/*
+* Creamos metodo setter del atributo Fin
+@param Fin , atributo de clase SecuencialCheque
+*/
     
     public void setFin(String fin) {
         this.fin = fin;
-    }
+    }//Cierro metodo
 }

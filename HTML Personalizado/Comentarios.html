@@ -1,0 +1,259 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Comentarios</title>
+<style type="text/css">
+#Titulo {	position: absolute;
+	width: 1457px;
+	height: 84px;
+	z-index: 1;
+	left: 6px;
+	top: 4px;
+}
+#Subtitulo {
+	position: absolute;
+	width: 1156px;
+	height: 64px;
+	z-index: 2;
+	left: 307px;
+	top: 89px;
+}
+#Contenido {
+	position: absolute;
+	width: 1155px;
+	height: 1108px;
+	z-index: 3;
+	left: 307px;
+	top: 155px;
+}
+#Subtemas {
+	position: absolute;
+	width: 300px;
+	height: 65px;
+	z-index: 4;
+	top: 89px;
+	left: 6px;
+}
+#Subtemas2 {	position: absolute;
+	width: 294px;
+	height: 96px;
+	z-index: 4;
+	top: 130px;
+	left: 6px;
+}
+#Subtemas3 {
+	position: absolute;
+	width: 294px;
+	height: 96px;
+	z-index: 4;
+	top: 169px;
+	left: 6px;
+}
+#Subtemas4 {	position: absolute;
+	width: 294px;
+	height: 65px;
+	z-index: 4;
+	top: 225px;
+	left: 8px;
+}
+#Contenido p {
+	font-family: Times New Roman, Times, serif;
+}
+</style>
+</head>
+
+<body>
+<div id="Titulo">
+  <blockquote>
+    <blockquote>
+      <h1 align="center">Comentarios en Java</h1>
+    </blockquote>
+  </blockquote>
+</div>
+<div id="Subtitulo">
+  <h3><strong><em>Los comentarios en Java</em></strong></h3>
+</div>
+<div id="Contenido">
+  <p align="justify"><a href="https://lenguajesdeprogramacion.net/diccionario/que-es-un-comentario-en-programacion/" rel="nofollow"></a>Son una gran herramienta para documentar nuestro código y hacerlos más entendibles para terceros. El uso principal de los comentarios en cualquier lenguaje de programación es una herramienta que sirve para apoyar la documentación de los programas que desarrollamos y así facilitar su posterior comprensión.</p>
+  <p align="justify">Estas líneas de código, que no se toman en cuenta al momento de ejecutar el programa, por lo tanto no están sujetas a restricciones de sintaxis ni nada similar.</p>
+  <p align="justify">Por ejemplo es muy común usar las líneas de comentarios, para dar una breve explicación de cómo funciona cierta parte de un código, lo cual permite identificar todo con mayor rapidez.</p>
+  <h3>Tipos de comentarios</h3>
+  <h4>Comentarios en Java de una sola línea</h4>
+  <p align="justify">Comienzan por un doble <u><em><strong>slash &quot;//&quot;</strong></em></u>, al colocar el doble <u><em><strong>slash</strong></em></u> en cualquier línea de código, todo lo que haya de ahí en adelante en dicha línea será tomado como comentario, ten en cuenta que el doble <u><em><strong>slash</strong></em></u> solo convierte en comentario al texto que pertenezca a su misma línea, las líneas de abajo de este, no se verán afectadas</p>
+  <h4>Comentarios en Java de múltiples líneas</h4>
+  <p align="justify">Estos comentarios van cerrados entre <u><em><strong>&quot;/*&quot;</strong></em></u> y <em><u><strong>&quot;*/&quot;</strong></u></em>, es decir comienzan donde se ponga <em><u><strong>&quot;/*&quot;</strong></u></em> y terminan donde esté el <em><u><strong>&quot;*/&quot;</strong></u></em>, siendo esto una manera mucho más sencilla en vez de esta añadiendo doble slash <em><u><strong>&quot;//&quot;</strong></u></em> a cada línea. A diferencia de los comentarios de una sola línea, al poner el símbolo <em><u><strong>&quot;/*&quot;</strong></u></em> todo el código que haya tanto en la misma línea, como en las línea posteriores de este se convertirán en comentarios hasta que pongamos el <em><u><strong>&quot;*/&quot;</strong></u></em> para indicar que hemos cerrado los comentarios</p>
+  <h4><strong>Comentarios de documentación en Java (Javadoc):</strong></h4>
+  <p align="justify">Son de especial utilidad al momento de documentar no sólo el código fuente, sino el proyecto como tal. Estos comentarios van cerrados entre <em><u><strong>&quot;/**&quot;</strong></u></em> y <em><u><strong>&quot;*/&quot;</strong>,</u></em> es decir comienzan donde se ponga <em><u><strong>&quot;/**&quot;</strong></u></em> y terminan donde esté el <em><u><strong>&quot;*/&quot;</strong></u></em>.Cabe resaltar que estos comentarios a diferencia de los comentarios de múltiples líneas, inician con <em><u><strong>&quot;/**&quot;</strong></u></em> (doble asterisco) en lugar de <em><u><strong>&quot;/*&quot;</strong></u></em> (un solo asterisco). Adicionalmente, se recomienda que cada línea que compone el bloque de comentarios inicie con <u><em><strong>&quot;*&quot;</strong></em></u>.<br>
+  Estos comentarios además requieren de algunos &quot;componentes&quot; para indicar los componentes del código fuente, tales como parámetros, tipos de retorno, entre otros. Estos &quot;componentes&quot; se normalmente se preceden por un <u><em><strong>@</strong></em></u>, por ejemplo para indicar un parámetro de una función de usa <u><em><strong>@param</strong></em></u>, o para indicar detalles sobre el retorno se usa <u><em><strong>@return</strong></em></u><strong>.</strong></p>
+  <table width="613" height="229" border="1">
+    <tr>
+      <th width="83" scope="row">Tipo</th>
+      <td width="431">Notación</td>
+      <td width="77" align="center">Ejemplo</td>
+    </tr>
+    <tr>
+      <th scope="row">En una línea</th>
+      <td>Comienzan con los caracteres // y terminan con la línea</td>
+      <td>//Recursividad</td>
+    </tr>
+    <tr>
+      <th scope="row">En múltiples líneas</th>
+      <td>Empieza con /* se escriben varias líneas y terminan con los caracteres */</td>
+      <td>/*Este es un ciclo for */</td>
+    </tr>
+    <tr>
+      <th height="92" scope="row">Javadoc</th>
+      <td> Comienzan con los caracteres /**, y en varias líneas al inicio se agrega * y terminan con los caracteres &quot;*/&quot;</td>
+      <td><p>/*Esta línea<br>
+        *no<br>
+        * se<br>
+        ejecuta*/</p></td>
+    </tr>
+  </table>
+  <h3>Etiquetas de javadoc</h3>
+  <p>La herramienta javadoc reconoce las siguientes etiquetas:</p>
+  <table width="1072" border="1">
+    <tr>
+      <th width="166" scope="row">Etiqueta</th>
+      <td width="670" align="center"><strong>Descripcion</strong></td>
+      <td width="214" align="center"><strong>Syntax</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@author</th>
+      <td>Agrega el autor de una clase.</td>
+      <td><strong>@author name-text</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">{@code}</th>
+      <td>Muestra texto en fuente de código sin interpretar el texto como marcado HTML o etiquetas javadoc anidadas.</td>
+      <td><strong>{@code text}</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">{@docRoot}</th>
+      <td>Representa la ruta relativa al directorio raíz del documento generado desde cualquier página generada.</td>
+      <td> <strong>generada.	{@docRoot}</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@deprecated</th>
+      <td>Agrega un comentario que indica que esta API ya no debe usarse.</td>
+      <td><strong>@deprecated deprecatedtext</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@exception</th>
+      <td> Agrega un subtítulo Throws a la documentación generada, con el nombre de la clase y el texto de descripción.</td>
+      <td><strong>@exception class-name description</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">{@inheritDoc}</th>
+      <td> Hereda un comentario de la clase heredable o interfaz implementable más cercana .</td>
+      <td><strong>Inherits a comment from the immediate surperclass.</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">{@link}</th>
+      <td>Inserta un enlace en línea con la etiqueta de texto visible que apunta a la documentación del paquete, la clase o el nombre de miembro especificados de una clase referenciada.</td>
+      <td><strong>{@link package.class#member label}</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">{@linkplain}</th>
+      <td> Idéntico a {@link}, excepto que la etiqueta del vínculo se muestra en texto sin formato que en fuente de código.</td>
+      <td><strong>{@linkplain package.class#member label}</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@param</th>
+      <td>Agrega un parámetro con el nombre de parámetro especificado seguido de la descripción especificada a la sección &quot;Parámetros&quot;.</td>
+      <td><strong>@param parameter-name description</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@return</th>
+      <td> Agrega una sección &quot;Devoluciones&quot; con el texto de descripción.</td>
+      <td><strong>@return description</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@see</th>
+      <td>Agrega un encabezado &quot;Ver también&quot; con un enlace o entrada de texto que apunta a una referencia.</td>
+      <td><strong>@see reference</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@serial</th>
+      <td>Se utiliza en el comentario del documento para un campo serializable predeterminado.</td>
+      <td><strong>@serial field-description</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@serialData</th>
+      <td> Documenta los datos escritos por los métodos writeObject () o writeExternal ().</td>
+      <td><strong>@serialData data-description</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@serialField</th>
+      <td> Documenta un componente ObjectStreamField.</td>
+      <td><strong>@serialField field-name field-type field-description</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@since</th>
+      <td>Agrega un encabezado &quot;Desde&quot; con el texto desde especificado a la documentación generada.</td>
+      <td><strong>@since release</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@throws</th>
+      <td>Las etiquetas @throws y @exception son sinónimos.</td>
+      <td> <strong>@throws class-name description</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">{@value}</th>
+      <td>Cuando se usa {@value} en el comentario de documento de un campo estático, muestra el valor de esa constante.</td>
+      <td><strong>{@value package.class#field}</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">@version</th>
+      <td> Agrega un subtítulo &quot;Versión&quot; con el texto de la versión especificado a los documentos generados cuando se usa la opción -version.</td>
+      <td><strong>@version version-text</strong></td>
+    </tr>
+  </table>
+  <h3><strong>Nota Importante</strong></h3>
+  <p>Los comentarios de documentación no deben colocarse en el interior de la definición de un método o constructor, ya que Java asocia los comentarios de documentación con la primera declaración después del comentario</p>
+  <h3><strong>ANOTACIONES</strong></h3>
+  <h4>Generales</h4>
+  <ul>
+    <li>
+      <p>@see referencia. Realiza un enlace. Ejemplos de referencia son: #metodo(); clase#metodo(); paquete.clase; paquete.clase#metodo();</p>
+    </li>
+    <li>      @since. Indica en la versión que apareció este elemento respecto a la secuencia de versiones aparecidas a lo largo del tiempo      </li>
+  </ul>
+  <h4>Paquetes</h4>
+  <ul>
+    <li>@see, @since</li>
+    <li>@deprecated. Indica que este elemento es antiguo y que no se recomienda su uso porque posiblemente desaparecerá en versiones posteriores. Se debe indicar la alternativa correcta</li>
+  </ul>
+  <h4>Clases e interfaces</h4>
+  <ul>
+    <li>@see, @since, @deprecated</li>
+    <li>@version. Versión y fecha</li>
+    <li>@author. Nombre del autor</li>
+  </ul>
+  <h4>Variables y constantes</h4>
+  <ul>
+    <li>@see, @deprecated</li>
+  </ul>
+  <h4>Métodos</h4>
+  <ul>
+    <li>@see, @since, @deprecated</li>
+    <li>@param. Definición de un parámetro, es obligatorio. *@param parámetro descripción</li>
+    <li>@return. documenta el dato devuelto, es obligatorio. *@return descripción</li>
+    <li>@throws. Excepción lanzada por el método. *@throws clase descripción  </li>
+  </ul>
+  <p>&nbsp;</p>
+</div>
+<div id="Subtemas">
+  <h3 align="center"><strong>Subtemas</strong></h3>
+</div>
+<div id="Subtemas2">
+  <h4 align="center"><em><a href="Home.html">Home</a></em></h4>
+</div>
+<div id="Subtemas3">
+  <h4 align="center"><em><a href="Documentacion.html">Documentacion en programas en Java</a></em></h4>
+</div>
+<div id="Subtemas4">
+  <h4 align="center"><em><a href="Porque.html">Porque documentar</a></em></h4>
+</div>
+</body>
+</html>

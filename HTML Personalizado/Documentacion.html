@@ -1,0 +1,166 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documentacion</title>
+<style type="text/css">
+#Titulo {
+	position: absolute;
+	width: 1457px;
+	height: 84px;
+	z-index: 1;
+	left: 6px;
+	top: 4px;
+}
+#Subtemas {
+	position: absolute;
+	width: 294px;
+	height: 65px;
+	z-index: 4;
+	top: 89px;
+	left: 6px;
+}
+#Subtemas2 {
+	position: absolute;
+	width: 294px;
+	height: 96px;
+	z-index: 4;
+	top: 130px;
+	left: 6px;
+}
+#Subtemas3 {
+	position: absolute;
+	width: 294px;
+	height: 65px;
+	z-index: 4;
+	top: 169px;
+	left: 5px;
+}
+#Subtemas4 {
+	position: absolute;
+	width: 294px;
+	height: 65px;
+	z-index: 4;
+	top: 205px;
+	left: 6px;
+}
+#Subtitulo {
+	position: absolute;
+	width: 1156px;
+	height: 64px;
+	z-index: 2;
+	left: 302px;
+	top: 81px;
+}
+#Contenido {
+	position: absolute;
+	width: 1155px;
+	height: 1108px;
+	z-index: 3;
+	left: 301px;
+	top: 132px;
+}
+</style>
+</head>
+
+<body>
+<div id="Titulo">
+  <blockquote>
+    <blockquote>
+      <h1 align="center"><strong>Documentacion en programas en Java</strong></h1>
+    </blockquote>
+  </blockquote>
+</div>
+<div id="Subtemas">
+  <h3 align="center"><strong>Subtemas</strong></h3>
+</div>
+<div id="Subtemas2">
+  <h4 align="center"><em><a href="Home.html">Home</a></em></h4>
+</div>
+<div id="Subtemas3">
+  <h4 align="center"><em><a href="Comentarios.html">Comentario en Java</a></em></h4>
+</div>
+<div id="Subtemas4">
+  <h4 align="center"><em><a href="Porque.html">Porque documentar</a></em></h4>
+</div>
+<div id="Subtitulo">
+  <h3><strong><em>¿Qué es la documentacion en Java?</em></strong></h3>
+</div>
+<div id="Contenido">
+  <p align="justify"><a href="https://lenguajesdeprogramacion.net/diccionario/que-es-un-comentario-en-programacion/" rel="nofollow"></a>La documentación en un proyecto es una parte fundamental a futuro ya que cuando se programa una clase, se debe generar la documentación lo suficientemente detallada haciendo uso del Javadoc, con el fin de que otros programadores sean capaces de usarla sólo con su interfaz. No debe existir necesidad de leer o estudiar su implementación, lo mismo que nosotros para usar una clase del API Java no leemos ni estudiamos su código fuente.</p>
+  <p><a href="https://javadesdecero.es/basico/tipos-comentarios-ejemplos/">[Documentación en Java]</a></p>
+  <p>&nbsp;</p>
+  <h3><em>¿Qué es el Javadoc?</em></h3>
+  <p align="justify">Es una utilidad de Oracle que la mayoría de IDEs utilizan para la generación de comentarios y documentación de APIs en formato HTML a partir de código fuente Java. • La herramienta Javadoc extrae esos comentarios especiales y genera páginas HTML para ser vistas desde el navegador. De esta manera facilitamos poder navegar de una clase a otra.</p>
+  <p>&nbsp;</p>
+  <h4><em>La documentación de Java</em></h4>
+  <ul>
+    <li>Los diseñadores de Java definieron un método sencillo para generar la documentación de las clases y métodos:</li>
+    <li>La documentación se inserta en el mismo fichero que el código (en forma de comentarios)</li>
+  </ul>
+  <h4><em>Veamos en primer lugar qué se debe incluir al documentar una clase:</em></h4>
+  <ol>
+    <li>Nombre de la clase, descripción general, número de versión y nombres de autores.</li>
+    <li><strong>Documentación de cada constructor o método</strong> (especialmente los públicos) incluyendo: nombre del constructor o método, tipo de retorno, nombres y tipos de parámetros si los hay, descripción general, descripción de parámetros (si los hay)y descripción del valor que devuelve.</li>
+  </ol>
+  <h3><strong><em>¿Qué hay que documentar?</em></strong></h3>
+  <table width="537" height="85" border="1">
+    <tr>
+      <td width="303">Hay que añadir explicaciones a todo lo que no es evidente.</td>
+    </tr>
+    <tr>
+      <td>No hay que repetir lo que se hace, sino explicar por qué se hace.</td>
+    </tr>
+  </table>
+  <p>Y eso se traduce en algunos ejemplos como:</p>
+  <ul>
+    <li>¿De qué se encarga una clase o un paquete?</li>
+    <li>¿Qué hace el método o constructor en caso que se utilice?</li>
+    <li>¿Cuál es el uso esperado del método?</li>
+    <li>¿Para qué se usa una variable?</li>
+    <li>¿Cuál es el uso esperado de una variable?</li>
+    <li>¿Qué algoritmo estamos usando, de dónde lo hemos sacado?</li>
+    <li>¿Qué limitaciones tiene el algoritmo y la implementación?</li>
+    <li>¿Qué se debería mejorar... si hubiera tiempo?</li>
+  </ul>
+  <h3><em><strong>Estos comentarios con etiquetas de documentación pueden ir al inicio de:</strong></em></h3>
+  <ul>
+    <li>Una clase.</li>
+    <li>Un atributo.</li>
+    <li>Un método.</li>
+  </ul>
+  <h4>Un ejemplo de etiquetas en comentarios:</h4>
+  <table width="588" border="1">
+    <tr>
+      <th width="466" scope="row"><div align="center">Ejemplo</div></th>
+    </tr>
+    <tr>
+      <th align="left" scope="row"><p>/**</p></th>
+    </tr>
+    <tr>
+      <th align="left" scope="row">*Esta clase contiene los atributos y métodos de un empleado</th>
+    </tr>
+    <tr>
+      <th align="left" scope="row">*@author Mario Celis</th>
+    </tr>
+    <tr>
+      <th align="left" scope="row">*@version 1.0</th>
+    </tr>
+    <tr>
+      <th align="left" scope="row">*@see Persona</th>
+    </tr>
+    <tr>
+      <th align="left" scope="row">*/</th>
+    </tr>
+  </table>
+  <h4>Para la documentación en Java</h4>
+  <p>Comentarios en java</p>
+  <p>Recordar que los comentarios javadoc son /** ... */. Se utiliza el carácter @ como anotación especial:</p>
+  <ul>
+    <li>Para describir las etiquetas de documentación.</li>
+    <li>Los comentarios se deben colocar justo antes del elemento a documentar.</li>
+    <li>Se permite añadir elementos HTML a la documentación para enriquecer su presentación</li>
+  </ul>
+  <p>&nbsp;</p>
+</div>
+</body>
+</html>

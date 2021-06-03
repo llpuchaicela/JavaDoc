@@ -8,6 +8,10 @@ package Banco;
 * @since 20/05/2021
 */
 
+/**
+* Se crea la clase con el nombre Ahorro
+*/
+
 public class Ahorro extends Cuenta{
     private double interesAnual;
 

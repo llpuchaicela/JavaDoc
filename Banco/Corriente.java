@@ -22,11 +22,13 @@ public class Corriente extends Cuenta{
     /*
     * Se crea un constructor que llama a sus atributos 
     * @see Super refiere a los atributos de la clase padre
+    * @param saldo, atributo de clase padre Cuenta
+    * @param numero, atributo de clase padre Cuenta
     */
     
     public Corriente(double saldo, String numero) {
         super(saldo, numero);
-    }
+    }// Cierro constructor
 
     /*
     * Creamos los metodos getter del atributo NroMaxCheques
@@ -34,11 +36,11 @@ public class Corriente extends Cuenta{
     
     public int getNroMaxCheques() {
         return nroMaxCheques;
-    }
+    }//Cierro metodo
     
     public SecuencialCheque getSecuencialCh() {
         return secuencialCh;
-    }
+    }//Cierro metodo
     
     /*
     * Creamos los metodos setter del atributo NroMaxCheques
@@ -47,10 +49,10 @@ public class Corriente extends Cuenta{
     
     public void setNroMaxCheques(int nroMaxCheques) {
         this.nroMaxCheques = nroMaxCheques;
-    }
+    }//Cierro metodo
 
 
     public void setSecuencialCh(SecuencialCheque secuencialCh) {
         this.secuencialCh = secuencialCh;
-    }
+    }//Cierro metodo
 }

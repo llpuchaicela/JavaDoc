@@ -1,7 +1,7 @@
 package Banco;
 
 /** 
-* package  es el paquete donde se crean las clases.
+* package Banco es el paquete donde se crean las clases.
 * @author Lilibeth Puchaicela
 * @author Anthony Franco
 * @versión 1.0
@@ -9,12 +9,13 @@ package Banco;
 */
 
 /**
-* Se crea la clase con el nombre Corriente
+* Se crea la clase con el nombre Corriente y sus atributos privados
+* nroMaxCheques y secuencialCh
 */
 
 public class Corriente extends Cuenta{
     private int nroMaxCheques;
-    private SecuencialCheque secunecialCh;
+    private SecuencialCheque secuencialCh;
 
 
     public Corriente(double saldo, String numero) {
@@ -22,22 +23,28 @@ public class Corriente extends Cuenta{
     }
 
     /*
-    * Creamos los metodos getter y setter del atributo NroMaxCheques
+    * Creamos los metodos getter del atributo NroMaxCheques
     */
     
     public int getNroMaxCheques() {
         return nroMaxCheques;
     }
+    
+    public SecuencialCheque getSecuencialCh() {
+        return secuencialCh;
+    }
+    
+    /*
+    * Creamos los metodos setter del atributo NroMaxCheques
+    */
 
+    
     public void setNroMaxCheques(int nroMaxCheques) {
         this.nroMaxCheques = nroMaxCheques;
     }
 
-    public SecuencialCheque getSecunecialCh() {
-        return secunecialCh;
-    }
 
-    public void setSecunecialCh(SecuencialCheque secunecialCh) {
-        this.secunecialCh = secunecialCh;
+    public void setSecuencialCh(SecuencialCheque secuencialCh) {
+        this.secuencialCh = secuencialCh;
     }
 }

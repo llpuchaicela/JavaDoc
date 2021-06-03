@@ -31,7 +31,7 @@ public class Corriente extends Cuenta{
     }// Cierro constructor
 
     /*
-    * Creamos los metodos getter del atributo NroMaxCheques
+    * Creamos los metodos getter del atributo NroMaxCheques y secuencialCh
     */
     
     public int getNroMaxCheques() {
@@ -43,7 +43,9 @@ public class Corriente extends Cuenta{
     }//Cierro metodo
     
     /*
-    * Creamos los metodos setter del atributo NroMaxCheques
+    * Creamos metodo setter del atributo NroMaxCheques
+    * @param nroMaxCheques, atributo de clase corriente 
+    * indica el número de cheques
     */
 
     
@@ -51,6 +53,10 @@ public class Corriente extends Cuenta{
         this.nroMaxCheques = nroMaxCheques;
     }//Cierro metodo
 
+    /*
+    * Creamos metodo setter del atributo secunecialCh
+    * @param secuencialCh, atributo de clase corriente
+    */
 
     public void setSecuencialCh(SecuencialCheque secuencialCh) {
         this.secuencialCh = secuencialCh;

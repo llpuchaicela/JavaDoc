@@ -20,12 +20,15 @@ public class Ahorro extends Cuenta{
     /*
     * Se crea un constructor que llama a su atributo interesAnual
     * @see Super refiere a los atributos de la clase padre
+    * @param saldo llama al atributo de la clase Cuenta
+    * @param numero es el numero de cuenta, atributo de clase padre
+    * @param interesAnual atributo de clase Ahorro
     */
     
     public Ahorro(double saldo, String numero, double interesAnual) {
         super(saldo, numero);
         this.interesAnual = interesAnual;
-    }
+    }//Cierro constructor
 
    //Creamos los metodos getters de los atributos Numero e InteresAnual
 
@@ -40,11 +43,11 @@ public class Ahorro extends Cuenta{
     
     public String getNumero() {
         return "CTA-AH-".concat(super.getNumero());
-    }
+    }//cierro metodo
 
     public double getInteresAnual() {
         return interesAnual;
-    }
+    }//Cierro metodo
     
     /**
     * @param monto: valida si el monto es valido
@@ -63,6 +66,6 @@ public class Ahorro extends Cuenta{
     public void retirar(double monto){
         if(isMontovalido(monto)){
             setSaldo(getSaldo()-monto);
-        }
+        }// Cierro metodo
     }
 }

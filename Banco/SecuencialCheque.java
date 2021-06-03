@@ -8,17 +8,16 @@ package Banco;
 * @since 20/05/2021
 */
 
-public class SecuencialCheque {
-    private String inicio;
-    private String fin;
-
 /**
 * Se crea la clase con el nombre SecuencialCheque
 */    
   
+public class SecuencialCheque {
+    private String inicio;
+    private String fin;
     
 /*
-* Creamos el metodo getter del atributo Inicio
+* Creamos los metodos getter y setter del atributo Inicio
 */    
     
     public String getInicio() {
@@ -32,16 +31,12 @@ public class SecuencialCheque {
     }
     
 /*
-* Creamos el metodo getter del atributo Fin
-*/    
+* Creamos los metodos getter y setter del atributo Fin
+*/
 
     public String getFin() {
         return fin;
-    }
-
-/*
-* Creamos el metodo setter del atributo Fin
-*/    
+    }    
     
     public void setFin(String fin) {
         this.fin = fin;

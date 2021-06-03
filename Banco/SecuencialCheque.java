@@ -1,7 +1,7 @@
 package Banco;
 
 /** 
-* package  es el paquete donde se crean las clases.
+* package Banco es el paquete donde se crean las clases.
 * @author Lilibeth Puchaicela
 * @author Anthony Franco
 * @versión 1.0
@@ -10,6 +10,7 @@ package Banco;
 
 /**
 * Se crea la clase con el nombre SecuencialCheque
+* con atributos privados de tipo String Inicio y fin
 */    
   
 public class SecuencialCheque {
@@ -17,26 +18,28 @@ public class SecuencialCheque {
     private String fin;
     
 /*
-* Creamos los metodos getter y setter del atributo Inicio
+* Creamos los metodos getter  del atributo Inicio
 */    
-    
+
+
+    public String getFin() {
+        return fin;
+    }    
+  
     public String getInicio() {
         return inicio;
     }
 
     
+
+/*
+* Creamos los metodos setter del atributo Fin
+*/
     
     public void setInicio(String inicio) {
         this.inicio = inicio;
     }
     
-/*
-* Creamos los metodos getter y setter del atributo Fin
-*/
-
-    public String getFin() {
-        return fin;
-    }    
     
     public void setFin(String fin) {
         this.fin = fin;

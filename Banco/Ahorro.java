@@ -1,8 +1,11 @@
 package Banco;
-/**
-* Esta clase es 
-*
-*
+
+/** 
+* package  es el paquete donde se crean las clases.
+* @author Lilibeth Puchaicela
+* @author Anthony Franco
+* @versión 1.0
+* @since 20/05/2021
 */
 
 public class Ahorro extends Cuenta{
